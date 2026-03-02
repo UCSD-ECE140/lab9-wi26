@@ -13,7 +13,7 @@ services:
     build: .
     command: uv run uvicorn app_oidc:app --host 0.0.0.0 --port 8000 --reload
     ports:
-      - "8000:8000"
+      - "8001:8000"
     volumes:
       - .:/app
       - /app/.venv
@@ -26,4 +26,4 @@ services:
       - db
 
 volumes:
-  mysql_data:
+  mysql_data_2:

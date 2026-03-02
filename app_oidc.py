@@ -19,7 +19,7 @@ load_dotenv()
 
 OIDC_CLIENT_ID = os.environ["OIDC_CLIENT_ID"]
 OIDC_CLIENT_SECRET = os.environ["OIDC_CLIENT_SECRET"]
-OIDC_REDIRECT_URI = os.environ.get("OIDC_REDIRECT_URI", "http://localhost:8000/callback")
+OIDC_REDIRECT_URI = os.environ.get("OIDC_REDIRECT_URI", "http://localhost:8001/callback")
 
 OIDC_AUTHORIZE_URL = "https://phylax.ece140.site/authorize"
 OIDC_TOKEN_URL = "https://phylax.ece140.site/token"
